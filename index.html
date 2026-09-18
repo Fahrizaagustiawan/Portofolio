@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="id" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#6d5efc" />
+    <title>Fahriza Agustiawan — Web Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Portfolio Fahriza Agustiawan — siswa TRPL yang fokus pada pengembangan web front-end."
+    />
+
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (!t)
+            t = window.matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light";
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div class="progress" id="progress"></div>
+
+    <!-- ============ NAVBAR ============ -->
+    <header class="nav" id="navbar">
+      <div class="container nav-inner">
+        <a href="#home" class="logo">
+          <span class="logo-mark">
+            <img src="foto_fahriza.png" alt="foto_fahriza" />
+          </span>
+          <span>
+            Fahriza Agustiawan
+            <small>Web Developer</small>
+          </span>
+        </a>
+
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="icon-btn" id="themeToggle" aria-label="Ganti tema">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <button
+            class="icon-btn nav-toggle"
+            id="navToggle"
+            aria-label="Buka menu"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============ HOME ============ -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <span class="badge">
+            <span class="dot"></span> Available for collaboration
+          </span>
+
+          <h1>Halo! Saya <span class="accent">Fahriza Agustiawan</span></h1>
+
+          <p class="role">
+            <span class="prefix">&gt;_ </span
+            ><span class="typed" id="typed">Front-End Developer</span
+            ><span class="caret"></span>
+          </p>
+
+          <p class="lead">
+            Siswa jurusan
+            <strong>Teknologi Rekayasa Perangkat Lunak (TRPL)</strong> yang
+            fokus pada pengembangan web front-end. Saya suka membangun antarmuka
+            yang bersih, responsif, dan nyaman dipakai di semua perangkat.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
+            </a>
+            <a href="#projects" class="btn btn-ghost">
+              <i class="fa-solid fa-folder-open"></i> Lihat Project
+            </a>
+          </div>
+
+          <div class="socials">
+            <a href="#" aria-label="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="#" aria-label="Email"
+              ><i class="fa-regular fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="code-window">
+            <div class="code-bar">
+              <div class="dots">
+                <span class="r"></span><span class="y"></span
+                ><span class="g"></span>
+              </div>
+              <span class="file">developer.js</span>
+            </div>
+            <div class="code-body">
+              <div>
+                <span class="ln">1</span><span class="c-key">const</span>
+                <span class="c-var">dev</span> = {
+              </div>
+              <div>
+                <span class="ln">2</span>&nbsp;&nbsp;<span class="c-prop"
+                  >nama</span
+                >: <span class="c-str">'Fahriza Agustiawan'</span>,
+              </div>
+              <div>
+                <span class="ln">3</span>&nbsp;&nbsp;<span class="c-prop"
+                  >jurusan</span
+                >: <span class="c-str">'TRPL'</span>,
+              </div>
+              <div>
+                <span class="ln">4</span>&nbsp;&nbsp;<span class="c-prop"
+                  >stack</span
+                >: [<span class="c-str">'HTML'</span>,
+                <span class="c-str">'CSS'</span>,
+                <span class="c-str">'JS'</span>],
+              </div>
+              <div>
+                <span class="ln">5</span>&nbsp;&nbsp;<span class="c-prop"
+                  >fokus</span
+                >: <span class="c-str">'Front-End'</span>,
+              </div>
+              <div>
+                <span class="ln">6</span>&nbsp;&nbsp;<span class="c-prop"
+                  >lokasi</span
+                >: <span class="c-str">'Saentis'</span>,
+              </div>
+              <div>
+                <span class="ln">7</span>&nbsp;&nbsp;<span class="c-fn"
+                  >ngoding</span
+                >: () =&gt; <span class="c-str">'🚀'</span>
+              </div>
+              <div><span class="ln">8</span>};</div>
+              <div><span class="ln">9</span></div>
+              <div>
+                <span class="ln">10</span
+                ><span class="c-com">// let's build something cool</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee">
+      <div class="marquee-track" id="marquee">
+        <div class="marquee-item"><i class="fa-brands fa-html5"></i> HTML5</div>
+        <div class="marquee-item">
+          <i class="fa-brands fa-css3-alt"></i> CSS3
+        </div>
+        <div class="marquee-item">
+          <i class="fa-brands fa-js"></i> JavaScript
+        </div>
+        <div class="marquee-item"><i class="fa-brands fa-figma"></i> Figma</div>
+        <div class="marquee-item"><i class="fa-brands fa-git-alt"></i> Git</div>
+        <div class="marquee-item">
+          <i class="fa-brands fa-github"></i> GitHub
+        </div>
+        <div class="marquee-item">
+          <i class="fa-brands fa-node-js"></i> Node.js
+        </div>
+        <div class="marquee-item">
+          <i class="fa-solid fa-database"></i> MySQL
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">About</span>
+          <h2>Tentang Saya</h2>
+          <p>
+            Saya adalah siswa Teknologi Rekayasa Perangkat Lunak (TRPL) yang
+            tertarik pada pengembangan web, khususnya sisi front-end, serta
+            senang membangun antarmuka yang bersih dan mudah dipakai.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Halo! Nama saya <strong>Fahriza Agustiawan</strong>, umur saya 18
+              tahun. Saya adalah siswa jurusan
+              <strong>Teknik Rekayasa Perangkat Lunak (TRPL)</strong> yang
+              sedang fokus mendalami dunia <strong>web development</strong>,
+              khususnya front-end.
+            </p>
+            <p>
+              Saya terbiasa menyusun struktur halaman yang semantik, menulis CSS
+              yang bersih dan responsif, serta menambahkan interaksi ringan
+              dengan JavaScript. Saya juga tertarik pada UI/UX dan senang
+              membuat tampilan yang enak dilihat.
+            </p>
+            <p>
+              Bagi saya, kode yang baik bukan hanya yang jalan — tapi juga rapi,
+              mudah dibaca, dan nyaman dipakai di semua perangkat. Saya terus
+              belajar hal baru setiap hari.
+            </p>
+          </div>
+
+          <ul class="info-list reveal">
+            <li>
+              <i class="fa-regular fa-user"></i>
+              <div>
+                <span>Nama Lengkap</span><strong>Fahriza Agustiawan</strong>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-cake-candles"></i>
+              <div><span>Tanggal Lahir</span><strong>28-08-2008</strong></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <div><span>Alamat</span><strong>Saentis</strong></div>
+            </li>
+            <li>
+              <i class="fa-solid fa-graduation-cap"></i>
+              <div>
+                <span>Jurusan</span
+                ><strong>TRPL — Teknologi Rekayasa Perangkat Lunak</strong>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="stats">
+          <div class="stat reveal">
+            <div class="num" data-count="2">0</div>
+            <div class="lbl">Tahun Belajar Coding</div>
+          </div>
+          <div class="stat reveal">
+            <div class="num" data-count="10" data-suffix="+">0</div>
+            <div class="lbl">Project Latihan</div>
+          </div>
+          <div class="stat reveal">
+            <div class="num" data-count="8">0</div>
+            <div class="lbl">Bahasa &amp; Tools</div>
+          </div>
+          <div class="stat reveal">
+            <div class="num" data-count="100" data-suffix="%">0</div>
+            <div class="lbl">Semangat Belajar</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section-soft" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Skills</span>
+          <h2>Keahlian</h2>
+          <p>Tools dan kemampuan yang saya pakai sehari-hari.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-top">
+              <i class="fa-brands fa-html5"></i>
+              <span class="name">HTML5</span>
+              <span class="pct">90%</span>
+            </div>
+            <div class="bar"><div class="fill" data-fill="90"></div></div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-top">
+              <i class="fa-brands fa-css3-alt"></i>
+              <span class="name">CSS3</span>
+              <span class="pct">85%</span>
+            </div>
+            <div class="bar"><div class="fill" data-fill="85"></div></div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-top">
+              <i class="fa-brands fa-js"></i>
+              <span class="name">JavaScript</span>
+              <span class="pct">75%</span>
+            </div>
+            <div class="bar"><div class="fill" data-fill="75"></div></div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-top">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <span class="name">Responsive Design</span>
+              <span class="pct">85%</span>
+            </div>
+            <div class="bar"><div class="fill" data-fill="85"></div></div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-top">
+              <i class="fa-brands fa-figma"></i>
+              <span class="name">Figma</span>
+              <span class="pct">70%</span>
+            </div>
+            <div class="bar"><div class="fill" data-fill="70"></div></div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-top">
+              <i class="fa-brands fa-git-alt"></i>
+              <span class="name">Git &amp; GitHub</span>
+              <span class="pct">72%</span>
+            </div>
+            <div class="bar"><div class="fill" data-fill="72"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Projects</span>
+          <h2>Project Saya</h2>
+          <p>Beberapa project yang sedang dan sudah saya kerjakan.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-thumb">
+              <i class="fa-solid fa-laptop-code"></i>
+              <span class="status">In Progress</span>
+            </div>
+            <div class="project-body">
+              <h3>Judul Project 1</h3>
+              <p>
+                Deskripsi singkat project di sini. Ceritakan tujuan, fitur
+                utama, dan apa yang kamu pelajari dari project ini.
+              </p>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="primary"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>Lihat
+                  Project</a
+                >
+                <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb">
+              <i class="fa-solid fa-mobile-screen"></i>
+              <span class="status">In Progress</span>
+            </div>
+            <div class="project-body">
+              <h3>Judul Project 2</h3>
+              <p>
+                Deskripsi singkat project di sini. Bisa tentang landing page,
+                aplikasi web sederhana, atau clone tampilan website.
+              </p>
+              <div class="tags">
+                <span>HTML</span><span>CSS</span><span>Responsive</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="primary"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>Lihat
+                  Project</a
+                >
+                <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb">
+              <i class="fa-solid fa-palette"></i>
+              <span class="status done">Selesai</span>
+            </div>
+            <div class="project-body">
+              <h3>Judul Project 3</h3>
+              <p>
+                Deskripsi singkat project di sini. Tuliskan hasil akhir dan
+                tools atau teknologi yang digunakan.
+              </p>
+              <div class="tags"><span>Figma</span><span>UI Design</span></div>
+              <div class="project-links">
+                <a href="#" class="primary"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>Lihat
+                  Project</a
+                >
+                <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section-soft" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Education</span>
+          <h2>Pendidikan</h2>
+          <p>Perjalanan belajar saya dari sekolah dasar hingga sekarang.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-dot"><i class="fa-solid fa-circle"></i></div>
+            <div class="tl-card">
+              <span class="tl-year">2026 — Sekarang</span>
+              <h3>D4 — Teknologi rekayasa perangkat lunak (TRPL)</h3>
+              <p class="place">
+                <i class="fa-solid fa-location-dot"></i> SMK PAB 8 Sampali
+              </p>
+              <p>
+                Mempelajari dasar pemrograman, pengembangan web (HTML, CSS,
+                JavaScript), basis data, serta dasar-dasar rekayasa perangkat
+                lunak dan UI/UX.
+              </p>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot"><i class="fa-solid fa-circle"></i></div>
+            <div class="tl-card">
+              <span class="tl-year">2023 — 2026</span>
+              <h3>SMK — Teknik Komputer Jaringan (TKJ)</h3>
+              <p class="place">
+                <i class="fa-solid fa-location-dot"></i> SMK PAB 8 Sampali
+              </p>
+              <p>
+                Mulai mengenal komputer dan internet secara lebih serius, serta
+                aktif dalam kegiatan sekolah yang berkaitan dengan teknologi.
+              </p>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot"><i class="fa-solid fa-circle"></i></div>
+            <div class="tl-card">
+              <span class="tl-year">2020 — 2023</span>
+              <h3>SMP</h3>
+              <p class="place">
+                <i class="fa-solid fa-location-dot"></i> SMP Negeri 3 Percut Sei
+                Tuan
+              </p>
+              <p>
+                Mulai mengenal komputer dan internet secara lebih serius, serta
+                aktif dalam kegiatan sekolah yang berkaitan dengan teknologi.
+              </p>
+            </div>
+          </div>
+
+          <div class="tl-item reveal">
+            <div class="tl-dot"><i class="fa-solid fa-circle"></i></div>
+            <div class="tl-card">
+              <span class="tl-year">2014 — 2020</span>
+              <h3>SD</h3>
+              <p class="place">
+                <i class="fa-solid fa-location-dot"></i> SD Negeri 104209
+                Saentis
+              </p>
+              <p>
+                Menempuh pendidikan dasar dan membangun kebiasaan belajar yang
+                disiplin serta rasa ingin tahu yang tinggi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Contact</span>
+          <h2>Hubungi Saya</h2>
+          <p>Punya pertanyaan atau ingin bekerja sama? Kirim pesan.</p>
+        </div>
+
+        <div class="contact-grid">
+          <ul class="contact-list reveal">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <div><span>Alamat</span><strong>Saentis</strong></div>
+            </li>
+            <li>
+              <i class="fa-regular fa-envelope"></i>
+              <div>
+                <span>Email</span><strong>fahfifa54321@email.com</strong>
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <div><span>Telepon</span><strong>+62 858-3107-2969</strong></div>
+            </li>
+            <li>
+              <i class="fa-regular fa-clock"></i>
+              <div>
+                <span>Waktu Respons</span
+                ><strong>Senin — Sabtu, 08.00–20.00</strong>
+              </div>
+            </li>
+          </ul>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="field">
+              <label for="nama">Nama</label>
+              <input
+                type="text"
+                id="nama"
+                name="nama"
+                placeholder="Nama lengkap"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="nama@email.com"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="pesan">Pesan</label>
+              <textarea
+                id="pesan"
+                name="pesan"
+                placeholder="Tulis pesan Anda di sini..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              <i class="fa-solid fa-paper-plane"></i> Kirim Pesan
+            </button>
+
+            <p class="form-note" id="formNote">
+              <i class="fa-solid fa-circle-check"></i> Terima kasih! Pesan Anda
+              sudah terkirim.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>
+          &copy; 2026 Fahriza Agustiawan. Dibuat dengan
+          <i class="fa-solid fa-heart"></i> &amp; kode.
+        </p>
+        <div class="socials">
+          <a href="#" aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="#" aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
