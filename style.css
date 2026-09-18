@@ -1573,6 +1573,9 @@ section {
     top: 74px;
     max-height: calc(100dvh - 90px);
   }
+  .hero-text h1 {
+    font-size: 3.2rem;
+  }
 }
 
 /* Preferensi pengguna */
